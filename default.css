@@ -4,16 +4,21 @@ body {
 	margin-right: 40px;
 	padding: 0;
 	/*background: #D1D1D1;*/
-	background: #DEDEDE;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #424140;
+	/*background: #DEDEDE;*/
+	background: #3B3B3B;
+	font-family: serif;
+	/*color: #424140;*/
+	/*color: #D1D1D1;*/
+	color: white;
 }
 
 h1, h2, h3 {
 	margin-top: 20px;
 	margin-bottom: 15px;
 	font-weight: normal;
-	color: #424140;
+	/*color: #424140;*/
+	/*color: #D1D1D1;*/
+	color: white;
 }
 
 h1 {
@@ -30,14 +35,16 @@ img {
 }
 
 a {
-	color: #5B698A;
+	/*color: #5B698A;*/
+	/*color: #A3DFFF;*/
+	color: #63FFFC;
 	text-decoration: none;
 }
 
 a:hover, a:active {
 	text-decoration: none;
 	/*color: #48ACDE;*/
-	color: black;
+	color: yellow;
 }
 
 #.current_page a {
