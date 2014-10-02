@@ -1,16 +1,15 @@
 body {
 	margin-top: 20px;
-	margin-left: 40px;
-	margin-right: 40px;
+	/*margin-left: 40px;*/
 	padding: 0;
-	/*background: #D1D1D1;*/
 	/*background: #DEDEDE;*/
 	background: #3B3B3B;
-	font-family: sans-serif;
+	font-family: serif, sans-serif;
 	/*color: #424140;*/
 	/*color: #D1D1D1;*/
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 h1, h2, h3 {
@@ -25,11 +24,11 @@ h1, h2, h3 {
 
 h1 {
 	/*letter-spacing: -1px;*/
-	font-size: 32px;
+	font-size: 34px;
 }
 
 h2 {
-	font-size: 23px;
+	font-size: 25px;
 }
 
 img {
@@ -61,4 +60,23 @@ li {
 
 img {
 	margin-bottom: 10px;
+}
+
+div#left-sidebar{
+	position:fixed;
+	top:0;
+	left:20;
+	margin-right: 40px;
+	margin-left: 0px;
+	margin-top: 0px;
+	width:250px;
+	height:100%;
+	/*background: black;*/
+	color: #3B3B3B;
+}
+
+div#content{
+	/*width: 500px;*/
+	margin-left: 290px;
+	margin-right: 40px;
 }
