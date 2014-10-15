@@ -1,10 +1,23 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v7/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+/*@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://fonts.gstatic.com/s/ubuntu/v7/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}*/
+
 body {
 	margin-top: 20px;
 	/*margin-left: 40px;*/
 	padding: 0;
 	/*background: #DEDEDE;*/
 	background: #3B3B3B;
-	font-family: serif, sans-serif;
+	font-family: Ubuntu, sans-serif;
 	/*color: #424140;*/
 	/*color: #D1D1D1;*/
 	color: white;
@@ -15,11 +28,12 @@ body {
 h1, h2, h3 {
 	margin-top: 30px;
 	margin-bottom: 15px;
-	font-weight: normal;
+	/*font-weight: normal;*/
+	font-weight: 700;
 	/*color: #424140;*/
 	/*color: #D1D1D1;*/
 	color: white;
-	font-family: serif;
+	font-family: Ubuntu, sans-serif;
 }
 
 h1 {
