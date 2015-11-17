@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: Add R mirror to your repository list in Ubuntu</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="left-sidebar">
+
+<h1>Theo Pepler</h1>
+
+<img src="../tpepler.jpg" height=150>
+
+<li><a href="../index.html">Home</a></li>
+<li><a href="../research.html">Research</a></li>
+<li><a href="../teaching.html">Teaching</a></li>
+<li><a href="../software.html">Software</a></li>
+<li><a href="../resources.html">Links and resources</a></li>
+<li><a href="../howtos.html">HOWTO's</a></li>
+
+</div>
+
+<div id="content">
+
+<h1>HOWTO: Add a R mirror to your repository list in Ubuntu Linux</h1>
+
+1) Search for a CRAN mirror close to you, at <tt>http://cran.r-project.org/mirrors.html</tt>, and note the mirror address (should look something like, <tt>http://star-www.st-andrews.ac.uk/cran/</tt>, for the mirror at St Andrews).<br>
+<br>
+2) In a terminal, type<br>
+<br>
+<tt>sudo gedit /etc/apt/sources.list</tt><br>
+<br>
+3) In the sources.list file, add the line<br>
+<br>
+<tt>deb http://star-www.st-andrews.ac.uk/cran/bin/linux/ubuntu trusty/</tt><br>
+<br>
+4) Save the file and exit gedit.<br>
+<br>
+5) In the terminal, type<br>
+<br>
+<tt>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9</tt><br>
+<br>
+(in general: <tt>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys KEYID</tt>, where you replace KEYID with the key you need)<br>
+<br>
+Note: If you are using a different CRAN mirror and/or different version of Ubuntu, the line in Step 3 should be changed accordingly.
+<br><br>
+<br><br>
+
+</div>
+
+</body>
+
+</html>
