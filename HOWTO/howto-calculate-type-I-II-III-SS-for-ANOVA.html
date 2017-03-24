@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: Calculate type I, II and III sums of squares for ANOVA in R</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="content">
+
+<h1><a href="../index.html">Theo Pepler</a></h1>
+
+<a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links and resources</a> | <a href="../howtos.html">HOWTO's</a>
+<br><br>
+
+<h3>HOWTO: CALCULATE TYPE I, II AND III SUMS OF SQUARES FOR ANOVA IN R</h3>
+
+<p>When performing an analysis of variance (ANOVA) for a fitted model, there are different ways to calculate the sums of squares (SS) for the model effects. A good readable explanation of the different types of SS, generally called I, II and III, can be found <a href="https://mcfromnz.wordpress.com/2011/03/02/anova-type-iiiiii-ss-explained/">here</a>.</p>
+
+<p><b>I would argue to <i>always</i> use type II SS when doing an ANOVA</b>. If you have a model with no interactions, fitted on data from a balanced design, the different types of SS will all lead to the same result. However, if there are interactions fitted in your model, and/or you have an unbalanced design, the SS (and resulting ANOVA tables) will differ. One should start by interpreting any interactions in the model, and <i>only interpret the main effects if there are no significant interactions</i> (between the main effects being interpreted). If the interaction(s) are not significant, type II SS give more powerful tests of the main effects.</p>
+
+<p>To perform ANOVA with type II SS in R:</p>
+
+1) Load the <tt>car</tt> library<br>
+<br>
+<tt>require(car)</tt><br>
+<br>
+2) To perform ANOVA for a fitted model (called <tt>myModel</tt>, for example)<br>
+<br>
+<tt>Anova(myModel, type = 'II')</tt>
+
+</div>
+
+</body>
+
+</html>
