@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: Search for all files containing particular keywords</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="content">
+
+<h1><a href="../index.html">Theo Pepler</a></h1>
+
+<a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links and resources</a> | <a href="../howtos.html">HOWTO's</a>
+<br><br>
+
+<h3>HOWTO: SEARCH FOR ALL FILES CONTAINING CERTAIN KEYWORDS</h3>
+
+1) From a terminal, navigate to the directory containing the files of interest.<br>
+<br>
+2) Use<br>
+<br>
+<tt>egrep -ail 'keyword1|keyword2|keyword3' *</tt><br>
+<br>
+to find all files (including PDFs) containing either keyword1, keyword2 and/or keyword3; the case is ignored.<br>
+<br>
+3) Alternatively, to find all <i>file names</i> containing a specific word on the entire system, use<br>
+<br>
+<tt>locate keyword1</tt><br>
+<br>
+
+</div>
+
+</body>
+
+</html>
