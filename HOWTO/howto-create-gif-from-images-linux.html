@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: Create animated GIF from images in Linux (command line)</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="content">
+
+<h1><a href="../index.html">Theo Pepler</a></h1>
+
+<a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links and resources</a> | <a href="../howtos.html">HOWTO's</a>
+<br><br>
+
+<h3>HOWTO: CREATE ANIMATED GIF FROM IMAGES IN LINUX (COMMAND LINE)</h3>
+
+<ol>
+<li>Make sure that <a href="http://www.imagemagick.org">ImageMagick</a> is installed on your system. The following steps won't work if it isn't installed. It seems to be included by default in Ubuntu Linux installations.</li>
+
+<li>Save the images (jpg, png) in a single folder, and name the images so that the alphabetical order reflects the order in which they should appear in the animated GIF.</li>
+
+<li>In a terminal, navigate to the folder where the images are saved, and use the <i>convert</i> command, for example,<br>
+<br>
+<tt>convert -delay 50 Rplot*.jpg mygif_file.gif</tt><br>
+<br>
+<b>Note:</b> the <i>delay</i> option specifies the amount of time to pause between the different frames in the GIF file.
+</li>
+</ol>
+
+</div>
+
+</body>
+
+</html>

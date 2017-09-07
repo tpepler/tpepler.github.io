@@ -17,44 +17,30 @@
 <a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links and resources</a> | <a href="../howtos.html">HOWTO's</a>
 <br><br>
 
-<!--<div id="left-sidebar">
-
-<h1>Theo Pepler</h1>
-
-<img src="../tpepler.jpg" height=150>
-
-<li><a href="../index.html">Home</a></li>
-<li><a href="../research.html">Research</a></li>
-<li><a href="../teaching.html">Teaching</a></li>
-<li><a href="../software.html">Software</a></li>
-<li><a href="../resources.html">Links and resources</a></li>
-<li><a href="../howtos.html">HOWTO's</a></li>
-
-</div>
-
-<div id="content">-->
-
 <h3>HOWTO: ADD A R MIRROR TO YOUR REPOSITORY LIST IN UBUNTU LINUX</h3>
+<ol>
+<li>Search for a CRAN mirror close to you, at <tt>http://cran.r-project.org/mirrors.html</tt>, and note the mirror address (should look something like, <tt>http://star-www.st-andrews.ac.uk/cran/</tt>, for the mirror at St Andrews).</li>
 
-1) Search for a CRAN mirror close to you, at <tt>http://cran.r-project.org/mirrors.html</tt>, and note the mirror address (should look something like, <tt>http://star-www.st-andrews.ac.uk/cran/</tt>, for the mirror at St Andrews).<br>
-<br>
-2) In a terminal, type<br>
+<li>In a terminal, type<br>
 <br>
 <tt>sudo gedit /etc/apt/sources.list</tt><br>
-<br>
-3) In the sources.list file, add the line<br>
+<br></li>
+
+<li>In the <i>sources.list</i> file, add the line<br>
 <br>
 <tt>deb http://star-www.st-andrews.ac.uk/cran/bin/linux/ubuntu trusty/</tt><br>
-<br>
-4) Save the file and exit gedit.<br>
-<br>
-5) In the terminal, type<br>
+<br></li>
+
+<li>Save the file and exit gedit.</li>
+
+<li>In the terminal, type<br>
 <br>
 <tt>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9</tt><br>
 <br>
 (in general: <tt>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys KEYID</tt>, where you replace KEYID with the key you need)<br>
 <br>
-<b>NOTE:</b> If you are using a different CRAN mirror and/or different version of Ubuntu, the line in Step 3 should be changed accordingly.
+<b>Note:</b> If you are using a different CRAN mirror and/or different version of Ubuntu, the line in Step 3 should be changed accordingly.</li>
+</ol>
 
 </div>
 

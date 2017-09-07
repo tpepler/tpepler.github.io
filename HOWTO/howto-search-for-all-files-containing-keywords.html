@@ -18,19 +18,19 @@
 <br><br>
 
 <h3>HOWTO: SEARCH FOR ALL FILES CONTAINING CERTAIN KEYWORDS</h3>
+<ol>
+<li>From a terminal, navigate to the directory containing the files of interest.</li>
 
-1) From a terminal, navigate to the directory containing the files of interest.<br>
+<li>To find all files (including PDFs) containing either keyword1, keyword2 and/or keyword3 (regardless of uppercase/lowercase spellings), use<br>
 <br>
-2) Use<br>
-<br>
-<tt>egrep -ail 'keyword1|keyword2|keyword3' *</tt><br>
-<br>
-to find all files (including PDFs) containing either keyword1, keyword2 and/or keyword3; the case is ignored.<br>
-<br>
-3) Alternatively, to find all <i>file names</i> containing a specific word on the entire system, use<br>
+<tt>egrep -ail 'keyword1|keyword2|keyword3' *</tt><br><br>
+</li>
+
+<li>Alternatively, to find all <i>file names</i> containing a specific word on the entire system, use<br>
 <br>
 <tt>locate keyword1</tt><br>
-<br>
+</li>
+</ol>
 
 </div>
 
