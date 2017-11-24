@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: How to install the Glasgow beamer theme in Linux</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="content">
+
+<h1><a href="../index.html">Theo Pepler</a></h1>
+
+<a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links and resources</a> | <a href="../howtos.html">HOWTO's</a>
+<br><br>
+
+<h3>HOWTO: INSTALL THE UNIVERSITY OF GLASGOW BEAMER THEME</h3>
+
+Daniel Williams made a <a href="https://github.com/transientlunatic/glasgow-theme">beamer theme</a> for complying with the University of Glasgow's branding guidelines (thanks Daniel!). A demo slide set for the theme is available <a href="https://github.com/transientlunatic/glasgow-theme/blob/master/demo.pdf">here</a>.<br>
+<br>
+Note that I'm using TeXstudio in Ubuntu 16.04 LTS.<br>
+
+<ol>
+<li>First clone the glasgow-theme GitHub repository to a folder on the local computer,<br>
+<br>
+<tt>git clone https://github.com/transientlunatic/glasgow-theme</tt></li>
+<br>
+
+<li>Install the theme on your computer with<br>
+<br>
+<tt>cd glasgow-theme</tt><br>
+<tt>make install</tt><br>
+<br>
+Note: To retrieve the UofG logo files during installation, you need to either be on campus, or connected to a campus computer via VPN.</li>
+
+<li>In TeXstudio, go to Options > Configure TeXstudio...</li>
+
+<li>Under the Build options, change Default Compiler to LuaLaTeX, and click OK.</li>
+
+<li>To the preamble of your LaTeX beamer .tex file, add<br>
+<br>
+<tt>\usetheme{glasgow}</tt><br>
+<br>
+and compile with TeXstudio.</li>
+
+<li>If some of the style files (for example, luaotfload.sty) are not found on the system, it may help to install the full LaTeX package first. From the command line, use<br>
+<br>
+<tt>sudo apt install texlive-full</tt></li>
+</ol>
+
+</div>
+
+</body>
+
+</html>
