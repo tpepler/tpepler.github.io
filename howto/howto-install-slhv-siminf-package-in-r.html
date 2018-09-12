@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: Download and install the SLHV SimInf package in R</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="content">
+
+<h1><a href="../index.html">Theo Pepler</a></h1>
+
+<a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links</a> | <a href="../howtos.html">HOWTO's</a>
+<br><br>
+
+<h3>HOWTO: DOWNLOAD AND INSTALL THE SLHV SIMINF PACKAGE IN R</h3>
+
+The SLHV package contains a custom model for use with the SimInf modelling framework.
+
+<ol>
+<li>From the command line, navigate to a directory on the local computer where you will download and save the source files for the SLHV model (the <tt>Downloads</tt> folder, for example).</li>
+
+<li>Clone the GitHub repository to the local folder with<br>
+<br>
+<tt>git clone https://github.com/tpepler/SLHV</tt><br><br></li>
+
+<li>From the R command prompt, use<br>
+<br>
+<tt>install.packages('~/Downloads/SLHV', repos = NULL, type = 'source')</tt><br>
+<br>
+to compile and install the SLHV package from source files. (Note that you will need to change <tt>~/Downloads</tt> in the above code to the folder where the SLHV repository is cloned.)</li>
+</ol>
+<br>
+<b>Note:</b> You might need to restart R for the SLHV package to work properly, if there was any updates to the SLHV package since a previous installation.
+
+</div>
+
+</body>
+
+</html>
