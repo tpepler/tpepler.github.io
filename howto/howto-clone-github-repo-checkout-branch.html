@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Theo Pepler | HOWTO: Clone a GitHub repository</title>
+<title>Theo Pepler | HOWTO: Clone a GitHub repository and check out a branch</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
@@ -18,7 +18,7 @@
 <a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links</a> | <a href="../howtos.html">HOWTO's</a>
 <br><br>
 
-<h3>HOWTO: CLONE A GITHUB REPOSITORY</h3>
+<h3>HOWTO: CLONE A GITHUB REPOSITORY AND CHECK OUT A BRANCH</h3>
 <ol>
 <li>In the terminal, navigate to the directory on the local computer in which the GitHub repository is to be cloned.</li>
 
@@ -28,6 +28,20 @@
 git clone https://github.com/tpepler/cpc<br>
 </tt><br>
 (In general, use: <tt>https://github.com/github_user/repository</tt>)</li>
+
+<li>If you want to check out a specific branch of the repository, change directory into the local copy of the repository:<br>
+<br>
+<tt>
+cd cpc<br>
+</tt>
+<br>
+and then use the following commands to check out a branch (named <i>mybranch</i>, for example):<br>
+<br>
+<tt>
+git fetch<br>
+git checkout mybranch<br>
+</tt>
+
 </ol>
 
 </div>
