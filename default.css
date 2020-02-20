@@ -59,7 +59,8 @@ a {
 	/*color: #A3DFFF;*/
 	/*color: #63FFFC;*/
 	color: #003865;
-	text-decoration: none;
+	/*text-decoration: none;*/
+	text-decoration: underline;
 }
 
 a:hover, a:active {
