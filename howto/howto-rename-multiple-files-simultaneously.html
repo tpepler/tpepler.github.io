@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title>Theo Pepler | HOWTO: Rename multiple files simultaneously using the rename program</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Theo, Pepler, PT Pepler, Pieter Theo Pepler, Theo Pepler, Glasgow, University of Glasgow, University, HOWTO">
+<meta name="description" content="Theo Pepler - HOWTO">
+<link href="../default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="content">
+
+<h1>Theo Pepler</h1>
+
+<a href="../index.html">Home</a> | <a href="../research.html">Research</a> | <a href="../teaching.html">Teaching</a> | <a href="../software.html">Software</a> | <a href="../resources.html">Links</a> | <a href="../howtos.html">HOWTO's</a>
+<br><br>
+
+<h3>HOWTO: RENAME MULTIPLE FILES SIMULTANEOUSLY USING THE RENAME PROGRAM</h3>
+
+File names containing spaces can be troublesome in Linux. Use the <tt>rename</tt> program as a shortcut to the arduous process of renaming files individually.
+
+<ol>
+<li>Install the rename program using<br>
+<br>
+<tt>sudo apt install rename</tt></li>
+
+<li>To replace spaces with dashes in all file names in the current directory, for example, use<br>
+<br>
+<tt>rename 's/ /-/g' *</tt></li>
+
+<li>Alternatively, to change the names of files in the current directory <i>and all subdirectories</i>, use <tt>**</t><br>
+<br>
+<tt>rename 's/ /-/g' **</tt></li>
+
+</ol>
+
+Source: <a href="https://linuxhandbook.com/rename-multiple-files/">Post</a> on Linux Handbook.
+
+</div>
+
+</body>
+
+</html>
+
+
